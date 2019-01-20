@@ -1,0 +1,9 @@
+phantom:
+  address: google.com # [Target's address]:[target's port]
+  uris:
+    - /
+  load_profile:
+    load_type: rps # schedule load by defining requests per second
+    schedule: const(1, 1m) # starting from 1rps growing linearly to 10rps during 10 minutes
+console:
+  enabled: true # enable console output
